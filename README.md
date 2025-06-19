@@ -1,5 +1,4 @@
 <div align="center">
-  <img src="https://user-images.githubusercontent.com/80675524/223235607-d0e5f564-e5c9-40a2-a63e-f8a4b39162f2.png" alt="Roady Logo" width="150"/>
   <h1><b>Roady - Road Damage Detection</b></h1>
   <p><i>Aplikasi Android cerdas yang menggunakan Computer Vision bertenaga AI untuk mendeteksi dan menganalisis kerusakan jalan dari gambar, serta memberikan wawasan dan rekomendasi perbaikan.</i></p>
 
@@ -170,6 +169,6 @@ Merasa tertarik untuk berkontribusi? Kami sangat terbuka!
 
 ## 📄 Lisensi
 
-Proyek ini merupakan bagian dari Proyek Akhir untuk mata kuliah Pemrograman Piranti Bergerak (PPB). Didistribusikan di bawah Lisensi MIT. Lihat `LICENSE` untuk informasi lebih lanjut.
+Proyek ini merupakan bagian dari Proyek Akhir untuk mata kuliah Pemrograman Perangkat Bergerak (PPB). Didistribusikan di bawah Lisensi MIT. Lihat `LICENSE` untuk informasi lebih lanjut.
 
 > **Catatan**: Aplikasi ini dirancang untuk para profesional pemeliharaan jalan dan pihak berwenang untuk mengidentifikasi dan mendokumentasikan kerusakan jalan secara efisien sebagai bagian dari perencanaan pemeliharaan.
