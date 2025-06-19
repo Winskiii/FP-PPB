@@ -158,7 +158,7 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    // --- METODE BARU: Menyimpan bitmap ke file cache dan mengembalikan URI-nya ---
+    // Menyimpan bitmap ke file cache dan mengembalikan URI-nya ---
     private Uri saveBitmapToCache(Bitmap bitmap) {
         File cachePath = new File(getCacheDir(), "images");
         cachePath.mkdirs(); // Buat direktori jika belum ada
@@ -174,7 +174,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    // --- METODE BARU: Mengirim URI (bukan bitmap) ke fragment ---
+    // Mengirim URI (bukan bitmap) ke fragment ---
     private void processAndDisplayImageUri(Uri imageUri) {
         if (imageUri == null) return;
 
@@ -187,13 +187,10 @@ public class MainActivity extends AppCompatActivity {
                 .replace(R.id.fragment_container, devicesFragment)
                 .commit();
 
-        // Update UI BottomNav tanpa memicu listener lagi
         bottomNavigationView.setOnItemSelectedListener(null);
         bottomNavigationView.setSelectedItemId(R.id.navigation_devices);
         setupNavigationListener();
     }
-
-    // Metode lama processAndDisplayImage(Bitmap) bisa dihapus
 
     private void checkCameraPermissionAndOpenCamera() {
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.CAMERA) == PackageManager.PERMISSION_GRANTED) {

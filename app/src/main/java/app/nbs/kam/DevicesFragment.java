@@ -95,8 +95,8 @@ public class DevicesFragment extends Fragment implements OnMapReadyCallback {
     private JSONArray allPredictions = new JSONArray();
 
     // --- Konstanta API ---
-    private static final String ROBOFLOW_API_URL = "https://detect.roboflow.com/road-damage-fhdff/1?api_key=GzmSCfORrjN5uttBwYNf";
-    private static final String GEMINI_API_KEY = "MASUKKAN_API_KEY_GEMINI_ANDA_DI_SINI";
+    private static final String ROBOFLOW_API_URL = "https://detect.roboflow.com/road-damage-fhdff/1?api_key=";
+    private static final String GEMINI_API_KEY = "A";
     private static final String GEMINI_API_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=" + GEMINI_API_KEY;
 
     private ActivityResultLauncher<String[]> requestLocationPermissionLauncher;
@@ -122,14 +122,12 @@ public class DevicesFragment extends Fragment implements OnMapReadyCallback {
             mapFragment.getMapAsync(this);
         }
 
-        // --- PERBAIKAN UTAMA DI SINI ---
         if (getArguments() != null && getArguments().containsKey("captured_image_uri")) {
             String imageUriString = getArguments().getString("captured_image_uri");
             if (imageUriString != null) {
                 // Buat executor untuk menjalankan tugas di background
                 ExecutorService executor = Executors.newSingleThreadExecutor();
                 executor.execute(() -> {
-                    // --- PROSES BERAT DI BACKGROUND THREAD ---
                     try {
                         Uri imageUri = Uri.parse(imageUriString);
                         Bitmap loadedBitmap;
@@ -167,9 +165,6 @@ public class DevicesFragment extends Fragment implements OnMapReadyCallback {
         mMap.getUiSettings().setZoomControlsEnabled(true);
         checkLocationPermissionAndEnableMyLocation();
     }
-
-    // ... (Sisa semua metode lain dari initializeViews hingga akhir tidak ada perubahan)
-    // Cukup salin-tempel seluruh file ini untuk menggantikan file lama Anda.
 
     private void initializeViews(View view) {
         editTextSearch = view.findViewById(R.id.edit_text_search);
