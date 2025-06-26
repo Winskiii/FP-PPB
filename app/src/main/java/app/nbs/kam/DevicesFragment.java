@@ -95,8 +95,8 @@ public class DevicesFragment extends Fragment implements OnMapReadyCallback {
     private JSONArray allPredictions = new JSONArray();
 
     // --- Konstanta API ---
-    private static final String ROBOFLOW_API_URL = "https://detect.roboflow.com/road-damage-fhdff/1?api_key=";
-    private static final String GEMINI_API_KEY = "A";
+    private static final String ROBOFLOW_API_URL = "https://detect.roboflow.com/road-damage-kmopv/3?api_key=dwesVDLjhQUW5dZHp4DA";
+    private static final String GEMINI_API_KEY = "AIzaSyB_VRWMdouEQe8r6Lf--uSijZfACNGuDfI";
     private static final String GEMINI_API_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=" + GEMINI_API_KEY;
 
     private ActivityResultLauncher<String[]> requestLocationPermissionLauncher;
@@ -330,6 +330,7 @@ public class DevicesFragment extends Fragment implements OnMapReadyCallback {
             case "pothole": return "Major Damage";
             case "patch": return "Moderate Damage";
             case "fatigue crack": return "Minimum Damage";
+            case "manhole": return "Sewage";
             default: return "Unknown";
         }
     }
