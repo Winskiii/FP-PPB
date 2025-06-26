@@ -1,5 +1,5 @@
 <div align="center">
-  ![Component 1](https://github.com/user-attachments/assets/d448f526-0877-431e-bf48-63b3afec8e65)
+  <h1><b> ![Component 1](https://github.com/user-attachments/assets/24fcad75-60e2-42ff-a714-4463efd27962) </b></h1>
   <h1><b>Roady - Road Damage Detection</b></h1>
   <p><i>Aplikasi Android cerdas yang menggunakan Computer Vision bertenaga AI untuk mendeteksi dan menganalisis kerusakan jalan dari gambar, serta memberikan wawasan dan rekomendasi perbaikan.</i></p>
 
